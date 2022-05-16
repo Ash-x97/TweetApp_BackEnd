@@ -1,0 +1,96 @@
+version: '3.4'
+
+networks:
+   tweetappnetwork-dev:
+      driver: bridge
+
+services:
+   com.tweetapp.api:
+      image: com.tweetapp.api:latest
+      depends_on:
+        - com.tweetapp.db
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - "44322:80"
+      environment:
+        - TweetAppDBSettings:ConnectionString=mongodb://com.tweetapp.db:27017
+        - Kafka:ClientConfigs:BootstrapServers=broker:29092
+      networks:
+        - tweetappnetwork-dev
+
+   com.tweetapp.db:
+      image: mongo:latest
+      ports:
+        - "27017:27017"
+      restart: always
+      volumes:
+        - db_volume:/var/lib/mongo/data
+      networks:
+        - tweetappnetwork-dev
+    
+   zookeeper:
+      image: confluentinc/cp-zookeeper:latest
+      hostname: zookeeper
+      container_name: zookeeper
+      ports:
+        - "2181:2181"
+      environment:
+        ZOOKEEPER_CLIENT_PORT: 2181
+        ZOOKEEPER_TICK_TIME: 2000
+      networks:
+        - tweetappnetwork-dev
+        
+   broker:
+    image: confluentinc/cp-server
+    hostname: broker
+    container_name: broker
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
+    networks:
+        - tweetappnetwork-dev
+        
+   prometheus:
+      build: 
+        context: .
+        dockerfile: dockerfile-prometheus.yml
+      ports:
+        - "9090:9090"
+      #configs:
+      #- source: prometheus_config
+      #  target: /etc/prometheus/prometheus.yml    
+      # added below property intead of above property rto solve undefined config issue
+      command:
+        - '--config.file=/etc/prometheus/prometheus.yml'
+      networks:
+        - tweetappnetwork-dev
+      depends_on:
+        - com.tweetapp.api
+      
+   grafana:
+      image: grafana/grafana-enterprise
+      ports:
+        - "3001:3000"   
+      networks:
+        - tweetappnetwork-dev
+      depends_on:
+        - prometheus    
+
+volumes:
+   db_volume:
+      
+  
+      
+      

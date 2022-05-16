@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "eZ/3YiwQG8c8h34GWscxxAXSiAwsiY8cpzxBPb9VMhoheBc3Rof8RCcmH6pntKG1IsS9EezzQi4siUkjDScS5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\confluent.kafka\\1.8.2\\confluent.kafka.1.8.2.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\librdkafka.redist\\1.8.2\\librdkafka.redist.1.8.2.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\5.0.0\\microsoft.extensions.hosting.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ASHFAK\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

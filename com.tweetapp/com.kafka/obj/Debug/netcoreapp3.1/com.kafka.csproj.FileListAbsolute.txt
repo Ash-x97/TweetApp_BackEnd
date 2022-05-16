@@ -1,0 +1,9 @@
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\bin\Debug\netcoreapp3.1\com.kafka.deps.json
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\bin\Debug\netcoreapp3.1\com.kafka.dll
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\bin\Debug\netcoreapp3.1\com.kafka.pdb
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.csproj.AssemblyReference.cache
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.AssemblyInfoInputs.cache
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.AssemblyInfo.cs
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.csproj.CoreCompileInputs.cache
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.dll
+C:\Users\ASHFAK\source\repos\Hackfse_tweetApp\com.tweetapp\com.kafka\obj\Debug\netcoreapp3.1\com.kafka.pdb

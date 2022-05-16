@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "com.tweetapp", "com.tweetapp\com.tweetapp.csproj", "{935C7003-C45D-42C0-84AC-7078A387BD27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F1B7263-ACA1-492B-BF57-42A92EEC510E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "com.kafka", "com.kafka\com.kafka.csproj", "{7320C9F0-C1B4-4364-9D82-E4C731911B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.tweetapp.test", "com.tweetapp.test\com.tweetapp.test.csproj", "{81185036-014D-419F-8799-B3B1FCFBC9D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NoVariablesDefault|Any CPU = NoVariablesDefault|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.NoVariablesDefault|Any CPU.ActiveCfg = Release|Any CPU
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.NoVariablesDefault|Any CPU.Build.0 = Release|Any CPU
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935C7003-C45D-42C0-84AC-7078A387BD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.NoVariablesDefault|Any CPU.ActiveCfg = Debug|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.NoVariablesDefault|Any CPU.Build.0 = Debug|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7320C9F0-C1B4-4364-9D82-E4C731911B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.NoVariablesDefault|Any CPU.ActiveCfg = Debug|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.NoVariablesDefault|Any CPU.Build.0 = Debug|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81185036-014D-419F-8799-B3B1FCFBC9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98B32697-02A3-45F1-8BE1-655B6FF50492}
+	EndGlobalSection
+EndGlobal
