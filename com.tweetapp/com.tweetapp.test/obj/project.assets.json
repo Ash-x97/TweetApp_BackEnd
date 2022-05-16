@@ -7487,11 +7487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp.test\\com.tweetapp.test.csproj",
+      "projectUniqueName": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp.test\\com.tweetapp.test.csproj",
       "projectName": "com.tweetapp.test",
-      "projectPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp.test\\com.tweetapp.test.csproj",
+      "projectPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp.test\\com.tweetapp.test.csproj",
       "packagesPath": "C:\\Users\\ASHFAK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp.test\\obj\\",
+      "outputPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASHFAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7508,8 +7508,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj": {
-              "projectPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj"
+            "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj": {
+              "projectPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj"
             }
           }
         }

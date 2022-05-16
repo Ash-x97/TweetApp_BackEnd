@@ -260,7 +260,7 @@ namespace com.tweetapp.Controllers
                 List<UserModel> users=await _userService.GetAllUsers();
                 if(users.Count>0)
                     return new OkObjectResult(new { users = users });
-                return new NotFoundObjectResult(new { message="No users found"});
+                return new NotFoundObjectResult(new { message="NO_USERS"});
             }
             catch(Exception e)
             {
@@ -348,10 +348,10 @@ namespace com.tweetapp.Controllers
                 {
                     List<TweetModel> tweets = await _tweetService.GetTweetsByLoginId(loginId);
                     if (tweets.Count>0)
-                        return new OkObjectResult(new { users = tweets });
-                    return new NotFoundObjectResult(new { message = "Tweets not found" });
+                        return new OkObjectResult(new { tweets = tweets });
+                    return new NotFoundObjectResult(new { message = "NO_TWEETS" });
                 }
-                return new BadRequestObjectResult(new { message = "LoginId is emptyr" });
+                return new BadRequestObjectResult(new { message = "INVALID_LOGIN_ID" });
             }
             catch (Exception e)
             {

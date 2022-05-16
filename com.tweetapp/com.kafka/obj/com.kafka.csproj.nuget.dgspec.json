@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj": {}
+    "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj": {
+    "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj",
+        "projectUniqueName": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj",
         "projectName": "com.kafka",
-        "projectPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj",
+        "projectPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj",
         "packagesPath": "C:\\Users\\ASHFAK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\obj\\",
+        "outputPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASHFAK\\AppData\\Roaming\\NuGet\\NuGet.Config",

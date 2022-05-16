@@ -4878,11 +4878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj",
+      "projectUniqueName": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj",
       "projectName": "com.tweetapp",
-      "projectPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj",
+      "projectPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp\\com.tweetapp.csproj",
       "packagesPath": "C:\\Users\\ASHFAK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.tweetapp\\obj\\",
+      "outputPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.tweetapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASHFAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4899,8 +4899,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj": {
-              "projectPath": "C:\\Users\\ASHFAK\\source\\repos\\Hackfse_tweetApp\\com.tweetapp\\com.kafka\\com.kafka.csproj"
+            "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj": {
+              "projectPath": "D:\\Professional Stuffs\\HackFSE_TweetApp\\Backend\\com.tweetapp\\com.kafka\\com.kafka.csproj"
             }
           }
         }
