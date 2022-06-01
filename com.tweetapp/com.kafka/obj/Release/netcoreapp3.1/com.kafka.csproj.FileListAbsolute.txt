@@ -1,0 +1,9 @@
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\bin\Release\netcoreapp3.1\com.kafka.deps.json
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\bin\Release\netcoreapp3.1\com.kafka.dll
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\bin\Release\netcoreapp3.1\com.kafka.pdb
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.csproj.AssemblyReference.cache
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.AssemblyInfoInputs.cache
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.AssemblyInfo.cs
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.csproj.CoreCompileInputs.cache
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.dll
+D:\Professional Stuffs\HackFSE_TweetApp\Backend\com.tweetapp\com.kafka\obj\Release\netcoreapp3.1\com.kafka.pdb

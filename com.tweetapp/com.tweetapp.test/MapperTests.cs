@@ -31,14 +31,28 @@ namespace com.tweetapp.test
                 ConfirmPassword="Test@123",
                 ContactNumber="0123456789"
             };
+            testReply = new Reply()
+            {
+                LoginId = "TestLogintId",
+                ReplyText = "New Reply Test",
+                Tags = new List<Tag>()
+                {
+                    new Tag(),
+                    new Tag()
+                }
+            };
+            testReply.Tags[0].TaggedUser = "Tag1";
+            testReply.Tags[1].TaggedUser = "Tag2";
 
             testTweet = new TweetModel()
             {
-                Id = null,
                 LoginId = "TestLogintId",
                 Text = "TestTweetContent",
                 Likes = { "a", "b" },
-                Replies = null,
+                Replies = new List<Reply>()
+                {
+                  testReply
+                },
                 Tags = new List<Tag>() 
                 {
                     new Tag(),
@@ -55,20 +69,7 @@ namespace com.tweetapp.test
                 Message="Test ExceptionMethod",
                 Method="TestExceptionMethod",
                 StackTrace="TestExceptionStackTrace"
-            };
-
-            testReply = new Reply()
-            {
-                LoginId = "TestLogintId",
-                ReplyText = "New Reply Test",
-                Tags = new List<Tag>()
-                {
-                    new Tag(),
-                    new Tag()
-                }
-            };
-            testReply.Tags[0].TaggedUser = "Tag1";
-            testReply.Tags[1].TaggedUser = "Tag2";
+            };            
 
             mongoConfig = new Mock<ITweetAppDBSettings>();
             mongoConfig.Setup(m => m.ConnectionString).Returns("mongodb://localhost:27017");

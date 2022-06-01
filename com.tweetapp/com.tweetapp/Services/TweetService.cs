@@ -3,12 +3,15 @@ using com.kafka.Interfaces;
 using com.kafka.Messages.Tweeting;
 using com.tweetapp.Interfaces;
 using com.tweetapp.Models;
+using Microsoft.Azure.ServiceBus;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace com.tweetapp.Services
@@ -105,6 +108,8 @@ namespace com.tweetapp.Services
         {
             try
             {
+                IQueueClient serviceBusClient = new QueueClient(_config["serviceBus:QueueConnectionString"], _config["serviceBus:QueueName"]);
+
                 _logger.LogInformation("Create tweet request recieved from : " + tweet.LoginId);
                 bool isRegistered = false;
                 if (!(tweet is null))
@@ -132,9 +137,17 @@ namespace com.tweetapp.Services
                                 ktags.Add(tempTag);
                             }
                             twt.Tags = ktags;
-                        }                        
+                        }
 
-                        await _kafkaProducer.ProduceAsync(KafkaTopics.PostTweet,null, twt);                                               
+                        //await _kafkaProducer.ProduceAsync(KafkaTopics.PostTweet,null, twt); -- kafka
+                        //service bus
+                        string tweetJSON = JsonConvert.SerializeObject(twt);
+                        Message tweetMessage = new Message(Encoding.UTF8.GetBytes(tweetJSON))
+                        {
+                            MessageId = Guid.NewGuid().ToString(),
+                            ContentType = "application/json"
+                        };                   
+                        await serviceBusClient.SendAsync(tweetMessage).ConfigureAwait(false);
 
                         isRegistered = true;
                         _logger.LogInformation("Tweet queued successfully. TweetId : " + tweet.Id);

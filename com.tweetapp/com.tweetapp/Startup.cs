@@ -66,7 +66,10 @@ namespace com.tweetapp
             services.AddSingleton(typeof(IKafkaProducer<,>), typeof(KafkaProducer<,>));
             services.AddScoped<IKafkaHandler<string, PostTweet>, PostTweetHandler>();
             services.AddSingleton(typeof(IKafkaConsumer<,>), typeof(KafkaConsumer<,>));
-            services.AddHostedService<PostTweetConsumer>();
+            //services.AddHostedService<PostTweetConsumer>();  -- not used since service bus
+
+            //Azure Service Bus hosted bacvkgruond service
+            services.AddHostedService<ServiceBusEvents.PostTweetHandler>();
 
             //Register dependent services for DI (constructor based)
             services.AddTransient<IExternalCommunicationService, ExternalCommunicationService>();

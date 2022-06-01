@@ -348,7 +348,7 @@ namespace com.tweetapp.Controllers
                 {
                     List<TweetModel> tweets = await _tweetService.GetTweetsByLoginId(loginId);
                     if (tweets.Count>0)
-                        return new OkObjectResult(new { tweets = tweets });
+                        return new OkObjectResult(new { tweets123 = tweets });
                     return new NotFoundObjectResult(new { message = "NO_TWEETS" });
                 }
                 return new BadRequestObjectResult(new { message = "INVALID_LOGIN_ID" });
